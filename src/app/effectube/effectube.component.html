@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <!-- <div class="header">
+    <div class="header__left">
+    
+      <input ngModel name="search" #search="ngModel"id="search" class="header__search" type="search"placeholder="Search"required/>
+      <button class="header__searchBtn" type="submit">Search </button>
+      </div>
+      </div>
+     <div class="container-fluid">
+      <div class="d-flex">
+      <div class="container">
+        <div class="row">
+         <video width="70%" height="70%" controls src="movie.ogg">
+            Your browser does not support the video tag.
+          </video>
+          <p><b>Note:</b></p>
+     </div>
+    </div>
+     
+     <div class="col-sm-2" style="margin-right:20px;">
+     <div class="row">
+         <video width="10%" height="10%" controls src="movie.ogg">
+            Your browser does not support the video tag.
+          </video>
+          <p><b>Note:</b></p>
+     </div>
+     <div class="row">
+         <video  controls src="movie.ogg">
+            Your browser does not support the video tag.
+          </video>
+          <p><b>Note:</b></p>
+     </div></div>
+     </div>
+     </div>
+
+ -->
+ 
+<div class="container-fluid">
+ <div class="header">
+    <div class="header__left">
+        
+      <input ngModel name="search" #search="ngModel"id="search" class="header__search" type="search"placeholder="Search"required/>
+      <button class="header__searchBtn" type="submit">Search </button>
+      </div>
+      </div>
+
+
+      
+ <div class=" container-fluid box">
+    <div class="row">
+      <div class="col-md-9">
+        <iframe  [src]="urlSafe" allow="autoplay" src="https://www.youtube.com/embed/5xg4Jvqy_UI"> </iframe>
+        <p style="font-size:40px;color:blue" >NAME:{{description}}</p>
+    </div>
+    
+
+        <div class="col-sm-3" >
+       
+
+              <div (click) ="video()" allow="autoplay"  class="cls" *ngFor= "let youtube of comment">   
+              <img src="https://opensource.google/images/projects/os-projects-angular.svg" alt="img" >
+              <p><b>{{youtube.vdget}}</b></p>
+          </div>
+
+          <div (click)="video1()" allow="autoplay"   class="cls">              
+            <img src="https://www.clariontech.com/hubfs/Angular%20Features.png" alt="img" >
+            <p [(ngModel)]="vdget2"><b>Angular Tutorial - 2 - Introduction</b></p>
+        </div>
+
+        <div (click)="video2()"  allow="autoplay" class="cls">              
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="img" >
+        <p [(ngModel)]="vdget3"><b>{{vdget3}}</b></p>
+      </div>
+
+      <div (click)="video3()"  allow="autoplay"  class="cls">              
+        <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/01/html5-css3.jpg?resize=1000%2C500&ssl=1" alt="img" >
+        <p [(ngModel)]="vdget4"><b>CSS Tutorial - 1 - Introduction</b></p>
+      </div>
+
+      <div (click)="video4()" allow="autoplay"  class="cls">        
+        <img src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg" alt="img" >
+        <p [(ngModel)]="vdget5"><b>REACTJS Tutorial - 1 - Introduction</b></p>
+      </div>
+      <div (click)="video5()" class="cls">
+              
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="img"  >
+        <p [(ngModel)]="vdget6"><b>PYTHON Tutorial - 1 - Introduction</b></p>
+
+
+      </div>
+      <div (click)="video6()" allow="autoplay"   class="cls">
+              
+        <img src="https://rosamarfil.es/tutoriales/wp-content/uploads/2019/08/java-logo-png.png" alt="img">
+        <p [(ngModel)]="vdget7"><b>JAVA Tutorial - 1 - Introduction</b></p>
+
+
+      </div>
+      <div (click)="video7()" allow="autoplay"  class="cls">
+              
+        <img src="https://online.crbtech.in/wp-content/uploads/2019/03/C-programming-1024x530.png" alt="img"  >
+        <p [(ngModel)]="vdget8"><b>C Tutorial - 1 - Introduction</b></p>
+
+
+      </div>
+      <div (click)="video8()"  allow="autoplay" class="cls">
+              
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="img" >
+        <p [(ngModel)]="vdget9"><b>C++ Tutorial - 1 - Introduction</b></p>
+
+
+    </div>
+          </div>
+         
+         
+
+
+
+
+<!--           
+          <li *ngFor="let video of videos">
+            <img [src]="video.image">
+            <iframe [src]="('https://www.youtube.com/embed/' + video.videoURL)">
+                <span>{{video.videoURL}}</span>
+            </iframe>
+
+          
+        </li>
+      </div>
+    </div>
+  </div>
+  <img type="text" class="first" placeholder="FirstName" [(ngModel)]="firstget">
+  <div class="btn">
+  <button  class="btn" (click)="videourl()">Submit</button>
+ 
+</div>
+<p>First Name: {{first}}</p>
+
+
+<div class="image-video-wrp">
+  <figure>
+    <ng-container>
+      <img src="" class="img">
+    </ng-container>
+    <ng-template>
+      <iframe width="100%" height="100%" src=""></iframe>
+    </ng-template>
+    <div class="play-icon-box">
+      <img (click)="changeImg()" [title]="play" [src]= "videoIcon" alt="">
+    </div>
+  </figure>
+</div> -->
+
+
+
+
+<!-- <p>Last Name:{{last}}</p>
+<p>Full Name: {{first + " " + last}}</p>
+<p>Date of Birth:{{date}}</p>
+<p>Place:{{place}}</p>
+<p>Email:{{mail}}</p>
+<p>College:{{clg}}</p>  -->
+
+<!-- <iframe width="100%" height="100%" frameBorder="0" [src]="urlSafe"></iframe> -->
+
+
+
+</div>
+</div>
+</div>
+
+
+   
+
+     </body>
+     </html>
+
